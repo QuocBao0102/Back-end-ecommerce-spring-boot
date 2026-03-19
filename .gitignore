@@ -1,0 +1,50 @@
+# Maven
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Logs
+*.log
+logs/
+
+# Env files
+.env
+.env.*
+application.properties
+application.yml
+
+# Build files
+*.jar
+*.war
+*.class
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+
+.vscode/
+
+# STS
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
