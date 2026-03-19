@@ -2,49 +2,51 @@
 
 ## 📌 Introduction
 
-This project is a **RESTful backend system for an E-commerce application** built with Spring Boot.
-It provides core functionalities such as **user authentication, product management, shopping cart, and order processing**.
+This project is a **backend RESTful API for an E-commerce system** built using Spring Boot.
+It handles core business logic such as authentication, product management, cart, and order processing.
 
-The system is designed following a clean architecture approach, making it scalable and easy to integrate with any frontend (Web, Mobile).
+The architecture follows a layered design to ensure scalability, maintainability, and clean code practices.
 
 ---
 
 ## 🚀 Features
 
-* 🔐 Authentication & Authorization (JWT)
+* 🔐 Authentication & Authorization (Spring Security + JWT)
 * 👤 User Management (Register / Login)
-* 📦 Product Management (CRUD)
+* 📦 Product Management (CRUD APIs)
 * 🗂 Category Management
 * 🛒 Shopping Cart
-* 📑 Order Processing
-* 🔍 Search & Filter products
-* 📊 Pagination API
+* 📑 Order Management
+* ⚠️ Global Exception Handling
+* 📄 DTO (Payload) pattern
+* 🔍 API validation
 
 ---
 
 ## 🛠 Tech Stack
 
-* **Backend:** Spring Boot, Spring Web
+* **Backend:** Spring Boot
 * **Security:** Spring Security, JWT
 * **Database:** MySQL
-* **ORM:** Hibernate, Spring Data JPA
+* **ORM:** Spring Data JPA (Hibernate)
 * **Build Tool:** Maven
-* **API Testing:** Postman
-
 
 ---
 
 ## 🏗 Project Structure
 
-```
-src/main/java/com/yourproject/
+```bash
+src/main/java/com/ecommerce/project/
+│── config          # Configuration (CORS, Bean, App config)
 │── controller      # REST API endpoints
+│── exceptions      # Global exception handling
+│── model           # Entity classes (database models)
+│── payload         # DTO (request/response objects)
+│── repositories    # JPA repositories (data access layer)
+│── security        # JWT + Spring Security config
 │── service         # Business logic
-│── repository      # Data access layer (JPA)
-│── entity          # Database entities
-│── dto             # Data transfer objects
-│── config          # Security & config
-│── exception       # Custom exception handling
+│── util            # Utility classes
+│── SbEcomApplication.java  # Main entry point
 ```
 
 ---
@@ -60,13 +62,15 @@ cd Back-end-ecommerce-spring-boot
 
 ### 2. Configure database
 
-Update file `application.properties`:
+Edit file `application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/your_db
+spring.datasource.url=jdbc:mysql://localhost:3306/ecommerce_db
 spring.datasource.username=root
 spring.datasource.password=your_password
 ```
+
+---
 
 ### 3. Run application
 
@@ -74,11 +78,27 @@ spring.datasource.password=your_password
 mvn spring-boot:run
 ```
 
-👉 Server will run at: `http://localhost:8080`
+👉 Server runs at: `http://localhost:8080`
 
 ---
 
 
+
+## 📂 Images
+
+Project screenshots are stored in `/images` folder.
+
+---
+
+## 🧠 Future Improvements
+
+* ✅ Swagger API documentation
+* ✅ Docker support
+* ✅ Payment integration (VNPay / Stripe)
+* ✅ Unit testing
+* ✅ Redis caching
+
+---
 
 ## 👨‍💻 Author
 
@@ -87,5 +107,6 @@ mvn spring-boot:run
 
 ---
 
+## ⭐ Support
 
-
+If you find this project useful, please give it a ⭐ on GitHub!
