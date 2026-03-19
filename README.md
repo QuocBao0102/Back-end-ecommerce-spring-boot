@@ -31,7 +31,6 @@ The system is designed following a clean architecture approach, making it scalab
 * **Build Tool:** Maven
 * **API Testing:** Postman
 
-👉 Đây là stack rất phổ biến trong các project e-commerce backend thực tế ([GitHub][1])
 
 ---
 
@@ -79,36 +78,7 @@ mvn spring-boot:run
 
 ---
 
-## 🔑 API Overview
 
-| Method | Endpoint       | Description      |
-| ------ | -------------- | ---------------- |
-| POST   | /auth/login    | Login user       |
-| POST   | /auth/register | Register user    |
-| GET    | /products      | Get all products |
-| POST   | /products      | Create product   |
-| PUT    | /products/{id} | Update product   |
-| DELETE | /products/{id} | Delete product   |
-| POST   | /cart          | Add to cart      |
-| POST   | /orders        | Place order      |
-
----
-
-## 📸 Demo (Optional)
-
-> Bạn có thể thêm ảnh Swagger / Postman ở đây
-
----
-
-## 🧠 Future Improvements
-
-* ✅ Payment integration (VNPay / Stripe)
-* ✅ Docker deployment
-* ✅ Unit & Integration testing
-* ✅ Caching (Redis)
-* ✅ Microservices architecture
-
----
 
 ## 👨‍💻 Author
 
@@ -117,8 +87,5 @@ mvn spring-boot:run
 
 ---
 
-## ⭐ If you find this project helpful
 
-Give it a ⭐ on GitHub!
 
-[1]: https://github.com/mdasharaf07/Springboot-ecommerce?utm_source=chatgpt.com "GitHub - mdasharaf07/Springboot-ecommerce: A Spring Boot e-commerce project demonstrates how to build a real-world web application with features like authentication, product management, and order processing."
