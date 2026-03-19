@@ -13,7 +13,7 @@ The architecture follows a layered design to ensure scalability, maintainability
 
 * 🔐 Authentication & Authorization (Spring Security + JWT)
 * 👤 User Management (Register / Login)
-* 📦 Product Management (CRUD APIs)
+* 📦 Product Management 
 * 🗂 Category Management
 * 🛒 Shopping Cart
 * 📑 Order Management
